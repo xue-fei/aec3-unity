@@ -1,3 +1,9 @@
 
 AEC3/.vs
 AEC3/output
+Library
+Logs
+Temp
+.vsconfig
+*.dwlt
+aec3-unity.sln
