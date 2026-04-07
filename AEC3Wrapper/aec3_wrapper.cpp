@@ -1,3 +1,4 @@
+#include "pch.h"
 #include "aec3_wrapper.h"
 #include "api/echo_canceller3_factory.h"
 #include "api/echo_canceller3_config.h"
@@ -8,16 +9,16 @@
 #include <cstdlib>
 
 using namespace webrtc;
-
-// 1. 补全 FatalLog 解决 LNK2019（运行时几乎不触发，仅防御性断言）
-namespace rtc {
-    namespace webrtc_checks_impl {
-        void FatalLog(const char* file, int line) {
-            fprintf(stderr, "[AEC3 FATAL] Check failed at %s:%d\n", file, line);
-            std::abort();
-        }
-    }
-}
+//
+//// 1. 补全 FatalLog 解决 LNK2019（运行时几乎不触发，仅防御性断言）
+//namespace rtc {
+//    namespace webrtc_checks_impl {
+//        void FatalLog(const char* file, int line) {
+//            fprintf(stderr, "[AEC3 FATAL] Check failed at %s:%d\n", file, line);
+//            std::abort();
+//        }
+//    }
+//}
 
 // 2. 上下文结构体（替代 demo.cc 中的局部变量）
 struct AEC3Context {
