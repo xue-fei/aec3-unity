@@ -10,3 +10,6 @@ aec3-unity.sln
 AEC3Wrapper/.vs
 AEC3Wrapper/AEC3Wrapper/x64
 AEC3Wrapper/x64 
+.vs
+obj
+Assembly-CSharp.csproj
