@@ -229,7 +229,7 @@ GameObject:
   - component: {fileID: 1281840792}
   - component: {fileID: 1281840791}
   - component: {fileID: 1281840795}
-  - component: {fileID: 1281840794}
+  - component: {fileID: 1281840796}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -303,18 +303,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1281840794
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1281840790}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4677e9f5a3811f54591927a525b66908, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!82 &1281840795
 AudioSource:
   m_ObjectHideFlags: 0
@@ -411,3 +399,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1281840796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1281840790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0b3688999eed574dadb42a5133f7a70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lpbWavPath: /aec3-unity/lpb.wav
+  micWavPath: /aec3-unity/mic.wav
+  outWavPath: /aec3-unity/aec_out.wav
